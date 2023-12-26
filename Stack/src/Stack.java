@@ -6,6 +6,10 @@ public class Stack<T>{
     }
 
     public void push(T value){
-        list.add(value);
+        list.insertAt(0, value);
+    }
+
+    public T peak(){
+        return (list.head.next.value);
     }
 }

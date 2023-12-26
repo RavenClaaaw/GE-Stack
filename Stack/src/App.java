@@ -5,5 +5,7 @@ public class App {
         stk.push(1);
         stk.push(2);
         stk.push(3);
+        
+        System.out.println(stk.peak());
     }
 }

@@ -1,5 +1,5 @@
 public class LinkedList<T>{
-    private Node<T> head;
+    public Node<T> head;
 
     LinkedList(){
         this.head = new Node<>(null);

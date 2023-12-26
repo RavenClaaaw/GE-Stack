@@ -30,8 +30,6 @@ public class LinkedList<T>{
     }
 
     public void delete(int index){
-        if(this.size() < 1) return;
-
         if(index == -1) index = this.size() - 1;
         if(index < 0 || index > this.size()){
             System.out.println("ERROR POSITION");

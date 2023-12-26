@@ -12,4 +12,11 @@ public class Stack<T>{
     public T peak(){
         return (list.head.next.value);
     }
+
+    public T pop(){
+        T value = (list.head.next.value);
+        list.delete(0);
+        
+        return value;
+    }
 }

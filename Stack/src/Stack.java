@@ -1,6 +1,22 @@
 public class Stack<T>{
     private LinkedList<T> list;
 
+    public static void main(String[] args) {
+        System.out.println("-- STACK --");
+        Stack<Integer> stk = new Stack<>();
+
+        stk.push(1);
+        stk.push(2);
+        stk.push(3);
+        
+        stk.display();
+        System.out.println("\nTOP: "+stk.peak());
+        stk.pop();
+
+        stk.display();
+        System.out.println("\nTOP: "+stk.peak());
+    }
+
     Stack(){
         list = new LinkedList<>();
     }
@@ -21,5 +37,9 @@ public class Stack<T>{
         list.delete(0);
         
         return value;
+    }
+
+    public void display(){
+        list.display();
     }
 }

@@ -38,6 +38,7 @@ public class LinkedList<T>{
 
         Node<T> current = head;
         for(int i=0; i<index; i++) current = current.next;
+        current.next = current.next.next;
     }
 
     public int search(T value){

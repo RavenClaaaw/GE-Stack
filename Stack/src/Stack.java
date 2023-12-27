@@ -10,11 +10,14 @@ public class Stack<T>{
     }
 
     public T peak(){
-        return (list.head.next.value);
+        if(list.size() > 0) return (list.head.next.value);
+        else return null;
     }
 
     public T pop(){
-        T value = (list.head.next.value);
+        T value = null;
+
+        if(list.size() > 0) value = (list.head.next.value);
         list.delete(0);
         
         return value;
